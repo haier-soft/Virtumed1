@@ -3,7 +3,7 @@
 window.addEventListener("DOMContentLoaded", () => {
   //add padding to body  when overflow: hidden
   function togglePaddingOfBody() {
-    if (!document.body.classList.contains("no-scroll") && window.innerWidth > 320) {
+    if (!document.body.classList.contains("no-scroll") && window.innerWidth > 325) {
       let paddingValue = window.innerWidth - document.documentElement.clientWidth + 'px'
       document.body.style.paddingRight = paddingValue
     } else {
@@ -99,7 +99,7 @@ window.addEventListener("DOMContentLoaded", () => {
   }
   //open modal
   function openModal(modal, modalInner) {
-    let paddingValue = window.innerWidth > 320 ? window.innerWidth - document.documentElement.clientWidth + 'px' : 0
+    let paddingValue = window.innerWidth > 325 ? window.innerWidth - document.documentElement.clientWidth + 'px' : 0
     modal.classList.add("open")
     document.body.style.paddingRight = paddingValue
     document.body.classList.add("no-scroll");
